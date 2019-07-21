@@ -210,7 +210,7 @@ async def _(event):
 
 @borg.on(admin_cmd("cat ?(.*)"))
 async def _(meow):
-    if event.fwd_from:
+    if meow.fwd_from:
          return
     await meow.edit(random.choice(CAT_LOB))
 			  
