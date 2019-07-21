@@ -34,7 +34,7 @@ async def get_tz(con):
         return
 
 
-@borg.on(admin_cmd("weather (.*)"))
+@borg.on(admin_cmd("weather ?(.*)"))
 async def get_weather(weather):
     """ For .weather command, gets the current weather of a city. """
     if not weather.text.startswith("."):
@@ -129,7 +129,7 @@ async def get_weather(weather):
                        f"`{time}`")
 
 
-@borg.on(admin_cmd("setcity (.*)"))
+@borg.on(admin_cmd("setcity ?(.*)"))
 async def set_default_city(city):
     """ For .ctime command, change the default userbot country for date and time commands. """
     if not city.text.startswith("."):
