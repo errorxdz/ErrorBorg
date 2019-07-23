@@ -19,7 +19,7 @@ async def on_file_to_photo(event):
         return  # This isn't an image
     if image.mime_type == 'image/webp':
         return  # Telegram doesn't let you directly send stickers as photos
-    if image.size > 10 * 1024 * 1024:
+    if image.size > 10 * 2560 * 1440:
         return  # We'd get PhotoSaveFileInvalidError otherwise
 
     file = await borg.download_media(target, file=BytesIO())
