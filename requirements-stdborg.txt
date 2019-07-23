@@ -28,3 +28,5 @@ google-api-python-client
 oauth2client
 httplib2
 pytz
+chromium-chromedriver
+chromium-browser
