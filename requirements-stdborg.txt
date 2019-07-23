@@ -30,3 +30,6 @@ httplib2
 pytz
 selenium
 webdriver-manager
+cowpy
+cowsay
+pyfiglet
