@@ -1,3 +1,5 @@
 telethon>=1.9.0
 lxml
+chromium-chromedriver
+chromium-browser
 -r ./requirements-stdborg.txt
